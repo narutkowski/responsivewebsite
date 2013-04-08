@@ -14,7 +14,18 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" media="screen and (max-width:680px)" href="css/themes/BigShots.min.css" />
+        <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" /> -->  
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+      <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+      
+      	
+	<script type="text/javascript">
+		$(".fancybox").fancybox();
+</script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,12 +33,205 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+<div data-role="page" id="home" data-theme="a" data-content-theme="a">
+
+
+<div data-role="header" id="desktop" data-position="fixed">
+<a href="#nav-panel" data-role="button" data-icon="bars" data-corners="false" data-iconpos="notext" id="nav-panel">Menu</a>
+<ul id="navbar">
+	<li><a href="#home">Home</a></li>
+	<li><a href="#foodmenu">Food Menu</a></li>
+	<li><a href="#specials">Daily Specials</a></li>
+</ul>
+<img src="img/big-shots-logo2.png" border="0" id="logo"/>
+<ul id="navbar2">
+	<li><a href="#parties">Parties</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+	<li><a href="#directions">Directions</a></li>
+</ul>
+</div> <!-- /desktop header -->
+
+<div data-role="content">
+<div id="homepage">
+<img src="img/big-shots-night.jpg" border="0" id="banner"/>
+<h4>Always a Party, Never A Cover!</h4>
+	<p class="about">Big Shots is the premier sports bar in New Jersey. Located on Route 1 in Woodbridge and open year round, Big Shots features all of the major sporting events including the best live bands and DJs to heat up your nightlife. <br />
+
+Over 80- HDTV's <br />
+Live Entertainment nightly DJ's & Bands <br />
+3 Floors 3 Atmospheres<br />
+If The Game Is On It's on Here!<br />
+MLB, NBA, NHL, NFL, etc...<br />
+	</p> 
+</div>
+
+<table id="homepage">	
+<tr>
+<td><img src="img/big-shots-night.jpg" border="0" id="banner"/></td>
+<td><h4 class="about">Always a Party, Never A Cover!</h4>
+<p class="about">Big Shots is the premier sports bar in New Jersey. Located on Route 1 in Woodbridge and open year round, Big Shots features all of the major sporting events including the best live bands and DJs to heat up your nightlife. <br /><br />
+
+Over 80- HDTV's <br /><br />
+Live Entertainment nightly DJ's & Bands <br /><br />
+3 Floors 3 Atmospheres<br /><br />
+If The Game Is On It's on Here!<br /><br />
+MLB, NBA, NHL, NFL, etc...<br />
+	</p> </td>
+</tr>
+</table>	
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+</div><!-- /footer -->
+
+	
+<div data-role="panel" data-position-fixed="true" data-display="overlay" id="nav-panel">
+    <ul data-role="listview">
+    <li><a href="#specials">Specials</a></li>
+    <li><a href="#foodmenu">Food Menu</a></li>
+    <li>Directions</li>
+    <li>Parties</li>
+    <li>Gallery</li>
+</ul>
+</div>
+</div><!-- /page -->  
+
+<div data-role="page" id="specials" data-theme="a" data-content-theme="a">
+
+<div data-role="header" id="desktop" data-position="fixed">
+<a href="#nav-panel" data-icon="bars" data-iconpos="notext" id="nav-panel">Menu</a>
+<ul id="navbar">
+	<li><a href="#home">Home</a></li>
+	<li><a href="#foodmenu">Food Menu</a></li>
+	<li><a href="#specials">Daily Specials</a></li>
+</ul>
+<img src="img/big-shots-logo2.png" border="0" id="logo"/>
+<ul id="navbar2">
+	<li><a href="#parties">Parties</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+	<li><a href="#directions">Directions</a></li>
+</ul>
+</div> <!-- /desktop header -->
+
+<div data-role="content">
+<h3>Daily Specials</h3>
+<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" class="specials">
+		<div data-role="collapsible">
+        	<h3>Monday</h3>
+        	<p><img class="specials" src="img/mondayspecials.png"/></p>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Tuesday</h3>
+        	<p><img class="specials" src="img/Tuesday.jpg"/></p>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Wednesday</h3>
+        	<p><img class="specials" src="img/Wednesday.jpg"/></p>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Thursday</h3>
+        	<p><img class="specials" src="img/tijuana-thursday.jpg"/></p>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Friday</h3>
+        	<p><img class="specials" src="img/Friday.jpg"/></p>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Saturday</h3>
+        	<p><img class="specials" src="img/Saturday.jpg"/></p>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Sunday</h3>
+        	<p><img class="specials" src="img/party-banner.jpg"/></p>
+        </div>
+
+</div>		
+
+<table id="dailyspecials">
+<tr>
+<td>
+<div class="dailyspecials" onclick="document.getElementById('specialsContent').innerHTML = '<img class=&quot;specials&quot; src=&quot;img/mondayspecials.png&quot;/>'">Monday</div><br />
+
+<div class="dailyspecials" onclick="document.getElementById('specialsContent').innerHTML = '<img class=&quot;specials&quot; src=&quot;img/Tuesday.jpg&quot;/>'">Tuesday</div><br />
+
+<div class="dailyspecials" onclick="document.getElementById('specialsContent').innerHTML = '<img class=&quot;specials&quot; src=&quot;img/Wednesday.jpg&quot;/>'">Wednesday</div><br />
+
+<div class="dailyspecials" onclick="document.getElementById('specialsContent').innerHTML = '<img class=&quot;specials&quot; src=&quot;img/tijuana-thursday.jpg&quot;/>'">Thursday</div><br />
+
+<div class="dailyspecials" onclick="document.getElementById('specialsContent').innerHTML = '<img class=&quot;specials&quot; src=&quot;img/Friday.jpg&quot;/>'">Friday</div><br />
+
+<div class="dailyspecials" onclick="document.getElementById('specialsContent').innerHTML = '<img class=&quot;specials&quot; src=&quot;img/Saturday.jpg&quot;/>'">Saturday</div><br />
+
+<div class="dailyspecials" onclick="document.getElementById('specialsContent').innerHTML = '<img class=&quot;specials&quot; src=&quot;img/party-banner.jpg&quot;/>'">Sunday</div><br />
+
+</td>
+<td id="specialsContent">
+<img class="specials" src="img/mondayspecials.png"/>
+</td>
+</tr>
+</table>
+
+</div> <!-- content -->
+
+<div data-role="footer" data-position="fixed">
+</div> <!-- footer -->
+
+<div data-role="panel" data-position-fixed="true" data-display="overlay" id="nav-panel">
+    <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#foodmenu">Food Menu</a></li>
+    <li>Directions</li>
+    <li>Parties</li>
+    <li>Gallery</li>
+</ul>
+</div>
+
+</div> <!-- specials page -->
+	
+<div data-role="page" id="foodmenu" data-theme="a" data-content-theme="a">
+
+<div data-role="header" id="desktop" data-position="fixed">
+<a href="#nav-panel" data-icon="bars" data-iconpos="notext" id="nav-panel">Menu</a>
+<ul id="navbar">
+	<li><a href="#home">Home</a></li>
+	<li><a href="#foodmenu">Food Menu</a></li>
+	<li><a href="#specials">Daily Specials</a></li>
+</ul>
+<img src="img/big-shots-logo2.png" border="0" id="logo"/>
+<ul id="navbar2">
+	<li><a href="#parties">Parties</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+	<li><a href="#directions">Directions</a></li>
+</ul>
+</div> <!-- /desktop header -->
+
+
+<div data-role="content">
+<a class="fancybox" rel="group" href="img/dinner_menu1.png"><img src="img/dinner_menu1_SMALL.png" alt="Menu" /></a>
+
+</div> <!-- content -->
+
+<div data-role="footer" data-position="fixed">
+</div> <!-- footer -->
+
+<div data-role="panel" data-position-fixed="true" data-display="overlay" id="nav-panel">
+    <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#specials">Specials</a></li>
+    <li>Directions</li>
+    <li>Parties</li>
+    <li>Gallery</li>
+</ul>
+</div>
+
+</div> <!-- FoodMenu page -->
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
